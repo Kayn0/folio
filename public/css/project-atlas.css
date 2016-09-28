@@ -1,0 +1,176 @@
+#project-atlas {
+	width:100vw;
+	min-height:100vh;
+	height:100%;
+	background-color: ghostwhite;
+}
+
+#project-atlas h2 {
+  font-family: 'montserrat-black', Times, serif;
+  font-size: 52px;
+  letter-spacing: 0;
+  /*font-size: 4vmin;*/
+  color: #373737;
+  padding: 0;
+}
+
+#project-atlas h3 {
+  font-family: 'montserrat-bold', Times, serif;
+  font-size: 32px;
+  /*font-size: 4vmin;*/
+  color: #0094ab;
+  letter-spacing: 0;
+  padding: 0;
+  margin: 0;
+}
+
+#project-atlas .banner {	
+	background: url(../img/atlas-banner.jpg) center;
+	background-size: cover;
+	border-bottom: 10px solid #0095ac;
+	box-shadow: 2px 0 3px #333;
+	height: 200px;
+	left: 0;
+	right: 0;
+	top: 0;
+}
+
+.atlas-container {
+	height: 850px;
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+.gif-resize {
+  width: 42%;
+}
+
+.atlas-gif {
+	border-radius: 2px;
+  left: 12px;
+  position: absolute;
+  top: 10px;
+  width: 92%;
+}
+
+.wireframes {
+	display: flex;
+	flex-direction: column;
+	-webkit-flex-direction: column;
+}
+
+.wireframes img {
+	width: 275px;
+	flex: 1;
+	margin-left: auto;
+}
+
+.block-a,
+.block-b, 
+.block-c {
+	float: left;
+	height: 100px;
+	/*margin-right: 10px;*/
+	width: 100px;
+}
+
+.block-a {
+	background-color: #0095ac;
+}
+
+.block-b {
+	background-color: #373737;
+}
+
+.block-c {
+	background-color: #666666;
+}
+
+img.atlas-mobile {
+	height:35%;
+	width:35%;
+}
+
+.col-1 {
+	display: inline-block;
+	text-align: center;
+}
+
+.grow {
+  display: inline-block;
+  transition-duration: 0.3s;
+  transition-property: transform;
+  -webkit-tap-highlight-color: transparent;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  z-index: 400;
+}
+
+.grow:hover {
+  transform: scale(1.5);
+  z-index: 500;
+}
+
+.atlas-link-btn {
+	width: 60%;
+	background-color: #0095ac;
+	border-radius: 2px;
+	height:40px;
+	line-height: 40px;
+	font-size: 16px;
+	color: #fff;
+	display: block;
+	font-family: 'montserrat-bold', Times, serif;
+  font-size: 16px;
+  letter-spacing: 0.05vw;
+  padding: 5px 10px;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+}
+
+.visible-arrow {
+	height: 30px;
+  margin-top: 5px;
+  float: right;
+}
+
+.atlas-link-btn span {
+ 	margin-bottom: 10px;
+
+}
+
+.atlas-link-btn:hover {
+	width: calc(100% - 20px);
+	background-color: white;
+	color: #0095ac;
+	border-radius: 10px;
+	box-shadow: 0 0 10px gray;
+	text-align: center;
+
+}
+
+.hidden-arrow {
+	height: 30px;
+  margin-top: 5px;
+  float: left;
+  position: relative;
+  left: -20px;
+	 transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+ opacity: 0;
+
+}
+
+.atlas-link-btn:hover span {
+	/*margin-left: 33%;*/
+}
+
+.atlas-link-btn:hover .visible-arrow {
+ 	transform: rotate(180deg);
+}
+
+.atlas-link-btn:hover .hidden-arrow {
+	
+	left: 0;
+	opacity: 1;
+}
