@@ -1,5 +1,4 @@
 <div id="pagewrap" class="pagewrap">
-  
   <div id="preloader-wrapper">
     <h1>Any moment now...</h1>
     <div id="preloader"></div>
@@ -7,7 +6,7 @@
 
   <div class="container show" id="page-1">
     
-    <!-- Single page navigation -->
+    <!-- Top navigation -->
     <%=  erb :header %>
 
     <div id="home">
@@ -16,12 +15,6 @@
           <img src="img/clouds3.png" />
         </div>
       </div>
-
-  <!--     <div class='layer-bg layer' data-depth='0.20' data-type='parallax'>
-        <div class="clouds-front">
-          <img src="img/clouds3.png" />
-        </div>
-      </div> -->
       <div class='layer-2 layer' data-depth='0.50' data-type='parallax'></div>
       <div class='layer-3 layer' data-depth='0.80' data-type='parallax'></div>
       <div class='layer-overlay layer' data-depth='1' data-type='parallax'>
@@ -30,16 +23,14 @@
         </div>
       </div>
 
-     <div class="header-text">
-        <!-- <h1 class="">KANE MASLEN</h1> -->
-         <a class="link link--yaku" href="#">
-          <span>K</span><span>a</span><span>n</span><span>e </span>
+      <div class="header-text">
+         <a class="font-spin spinner" href="#">
+          <span>K</span><span>a</span><span>n</span><span>e</span>
           <span>M</span><span>a</span><span>s</span><span>l</span><span>e</span><span>n</span>           
         </a>
         <h2>WEB DEVELOPER</h2>
-        
       </div>
-    </div>
+    </div> 
 
     <div id="home-mobile">
       <div class="header-text-mobile">
@@ -47,24 +38,20 @@
         <h2>WEB DEVELOPER</h2>
         <div class="trigger"></div>
       </div>
-
-      <div class="mobile-bg">
-          
-        </div>
-
+      
+      <div class="mobile-bg"></div>
       <div class="clouds-mobile">
           <img src="img/clouds3.png" />
         </div>
     </div>
     
-
     <!-- About me segment -->
     <div id="about-me" class="segment bg-color-dark" >
       <div class="cavern">
         <img src="img/cavern2.png" />
       </div>
       <div class="photo-holder delay-1">
-        <img src="img/dude.jpg" />
+        <img src="img/profile.jpg" />
       </div>
 
       <div class="info">
@@ -77,11 +64,7 @@
         <div class="info-container">
           <div class="info delay-1">
             <h4 class="about-subheader">Design.</h4>
-            <div class="circle">
-            <!--  <div class="design-gif">
-                <img src="img/responsive.gif" class="" alt="responsive design gif"/>
-              </div> -->
-            </div>
+            <div class="circle"></div>
             <div class="line"></div>
             <p class="snippet">Having a background in graphic design, I enjoy using those skills to deliver intuitive user interfaces and experiences.</p>
           </div>
@@ -99,10 +82,10 @@
             <div class="line"></div>
             <p class="snippet">I'm passionate, hard working and I love what I do.</p>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
+        </div> <!-- End .info-container -->
+      </div> <!-- End .info -->
+    </div> <!-- End #about-me -->
+  </div> <!-- End #page-1 -->
 
   <!-- Projects segment -->
   <div class="container show" id="page-2">
@@ -194,4 +177,3 @@
     </svg>
   </div>
 </div>
-

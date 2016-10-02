@@ -1,10 +1,24 @@
 $(document).ready(function(){
+
+  // $(".spinner").trigger("mouseenter");
+// $('.spinner').addClass('hover');
+
+
+
+
+
    $(window).scrollTop(0);
   //Preloader
   setTimeout(function(){
     $('body').addClass('loaded');
     $('h1').css('color','#222222');
-  }, 3000);
+  }, 0000);
+
+
+
+
+
+
 
   //Page transitions
   (function() {

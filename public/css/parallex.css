@@ -8,38 +8,36 @@
 }
 
 #projects {
-  margin-top: 0;
-  z-index:0;
   height: 100%;
+  margin-top: 0;
   min-height: 1400px;
   width: 100vw;
-
+  z-index:0;
 }
 
 .layer {
   background-position: bottom center;
   background-repeat: no-repeat;
-  width: 100vw;
   height: 100vh;
   position: fixed;
+  width: 100vw;
   z-index: -1;
 }
 
 .projectLayer {
   background-position: bottom center;
   background-repeat: no-repeat;
-  width: 100vw;
-  min-height:500px;
   height:100%;
+  min-height:500px;
   position: fixed;
+  width: 100vw;
   z-index: -1;
 }
 
 #home-mobile {
   display: none;
-  /*background: url("../img/tree.png") no-repeat center bottom/contain;*/
-  min-height: 80vh;
   margin-bottom: 20px;
+  min-height: 80vh;
 }
 
 #home, #projects-hero, .layer {
@@ -67,74 +65,36 @@
   z-index: 11;
 }
 
-
 #content {
   background-color: #72A0A0;
 }
 
-
-
-
-
-.projects-layer-bg {
-  /*background-color: #72A0A0;*/
-  
-}
-
-/*.projects-layer-1 {
-  position: absolute;
-  background-image: url("../img/projects-grass.png\a    ");
-  background-position: bottom;
-  background-size: cover;
-  z-index: 9;
-  bottom: 0vmin;
-}*/
-
 .projects-layer-2 {
-  position: absolute;
   background-image: url("../img/projects-bg2.png\a    ");
   background-position: bottom center;
   background-size: contain;
   bottom: 105vh;
+  position: absolute;
   z-index: -1;
 }
 
 .projects-layer-3 {
-  position: absolute;
   background-image: url("../img/projects-bg1.png\a    ");
   background-position: bottom center;
   background-size: contain;
-  z-index: -1;
   bottom: 63vh;
+  position: absolute;
+  z-index: -1;
 }
 
 .projects-layer-4 {
   background-image: url("../img/cave-roof2.png\a    ");
   background-position: bottom center;
   background-size: contain;  
+  display: none;
   top: -27vh;
   z-index: -1;
-  display: none;
 }
-/*.projects-layer-overlay {
-  background-image: url("../img/cave-roof1.png\a    ");
-  background-position: top center;
-  background-size: contain;  
-  top: 37vh;
-  z-index: -1;
-}*/
-
-
-/*.projects-layer-4 {
- background-image: url("../img/cave-roof.png\a    ");
-  background-position: top;
-  background-size: contain;
-  z-index: 10;
-  top: -50px;
-  position:absolute;
-  overflow: visible;
-}*/
-
 
 @media only screen and (max-width: 768px) {
   #home {
