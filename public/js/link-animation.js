@@ -1,23 +1,10 @@
 $(document).ready(function(){
   $(window).scrollTop(0);
-  // $(".spinner").trigger("mouseenter");
-// $('.spinner').addClass('hover');
 
   setTimeout(function(){
-  //   $.fn.preload = function() {
-  //     this.each(function(){
-  //         $('<img/>')[0].src = this;
-  //     });
-  //   }
-
-  // $(['tree.png','hill-fg.png','hill-bg.png']).preload();
-
-
-
     $('body').addClass('loaded');
     $('h1').css('color','#222222');
   }, 3000);
-
 
   //Page transitions
   (function() {
@@ -38,32 +25,17 @@ $(document).ready(function(){
           // after some time hide loader
           setTimeout(function(){
             loader.hide();
-
-            console.log('pagewrap', pageWrap);
-            
-            console.log('pages', pages);
-            
-              pages.forEach(function(page){
+            pages.forEach(function(page){
               pageID = '#' + page.id;
               parentHash = $(ev.srcElement.hash).selector;
-              // parentPath = ev.path[1].hash;
               parentPath = ev.srcElement.parentElement.hash;
               if (pageID == parentHash)  {
                 currentPage = i;
-                console.log('currentPage', currentPage);
               }
               i++;
-              
-
-              console.log('tesssst', ev.toElement.hash);
-
-
-              console.log('srcEle', parentHash);
-              console.log('pageID', pageID);
 
               //if hash or parent hash match, show class
               if ((ev.srcElement.hash == pageID) || (parentHash == pageID)) {
-              // if ((parentPath == pageID) || (parentHash == pageID)) {
                 i = currentPage;
                 classie.addClass(page, 'show');               
                 // fix to ensure project pages load at top
@@ -85,7 +57,7 @@ $(document).ready(function(){
                 classie.removeClass(page, 'show');
               } 
             });
-          },1500);
+          },2000);
         });
       }); 
 
@@ -105,8 +77,7 @@ $(document).ready(function(){
             classie.addClass(pages[0], 'show');
             classie.addClass(pages[1], 'show');
             $("html, body").animate({ scrollTop: 0 }, "fast");
-          
-          },1500);
+          },2000);
         });
       });
 
@@ -140,6 +111,7 @@ $(document).ready(function(){
               currentPage = prevPage
               classie.addClass(pages[prevPage], 'show');
             }
+
             // ensure projects pages always load at top
             $('html, body').animate({
               scrollTop: $("#project-ccp").offset().top
@@ -152,7 +124,7 @@ $(document).ready(function(){
             $('html, body').animate({
               scrollTop: $("#project-abc").offset().top
             }, 0);
-          },1500);
+          },2000);
         });
       });
     }init();
@@ -246,17 +218,13 @@ $(document).ready(function(){
     var elem = $('.page-cycle');
     setTimeout(function() {
        elem.css({"opacity":"1","transition":"1.3s"}); 
-      
     },1000);            
         elem.css({"opacity":"0","transition":"0.3s"});
-
-
 
     var scroll = $(window).scrollTop();
     if (scroll >= 500) {
       caveRoof.addClass('show-elem');
       header.removeClass("clear-header").addClass('transparent-header');
-      
     } else {
       header.removeClass("transparent-header").addClass('clear-header');
     }
@@ -266,11 +234,5 @@ $(document).ready(function(){
       $('.photo-holder').removeClass('lightSpeedOut').addClass('bounceIn');
       $('.info').removeClass('lightSpeedOut').addClass('lightSpeedIn'); 
     }
-
-    else {
-      // $('.segment-header').removeClass('lightSpeedIn').addClass('lightSpeedOut');
-      // $('.photo-holder').removeClass('bounceIn').addClass('lightSpeedOut');
-      // $('.info').removeClass('lightSpeedIn').addClass('lightSpeedOut'); 
-    } 
   });
 });
