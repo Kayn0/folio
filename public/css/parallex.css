@@ -45,14 +45,14 @@
 }
 
 .layer-2 {
-  background-image: url("../img/hill2.png\a    ");
+  background-image: url("../img/hill-bg.png\a    ");
   background-position: bottom;
   background-size: contain;
   z-index: 11;
 }
 
 .layer-3 {
-  background-image: url("../img/hill1.png\a    ");
+  background-image: url("../img/hill-fg.png\a    ");
   background-position: bottom;
   background-size: contain;
   z-index: 11;
@@ -88,7 +88,7 @@
 }
 
 .projects-layer-4 {
-  background-image: url("../img/cave-roof2.png\a    ");
+  background-image: url("../img/cave-roof-bg.png\a    ");
   background-position: bottom center;
   background-size: contain;  
   display: none;

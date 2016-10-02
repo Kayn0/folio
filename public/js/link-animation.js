@@ -1,23 +1,22 @@
 $(document).ready(function(){
-
+  $(window).scrollTop(0);
   // $(".spinner").trigger("mouseenter");
 // $('.spinner').addClass('hover');
 
-
-
-
-
-   $(window).scrollTop(0);
-  //Preloader
   setTimeout(function(){
+  //   $.fn.preload = function() {
+  //     this.each(function(){
+  //         $('<img/>')[0].src = this;
+  //     });
+  //   }
+
+  // $(['tree.png','hill-fg.png','hill-bg.png']).preload();
+
+
+
     $('body').addClass('loaded');
     $('h1').css('color','#222222');
-  }, 0000);
-
-
-
-
-
+  }, 3000);
 
 
   //Page transitions
