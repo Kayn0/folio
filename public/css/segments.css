@@ -349,6 +349,8 @@ div.center {
 	max-width: 768px;
   height: 600px;
   margin: 0 40px;
+  position: relative;
+  z-index: 101;
 }
 
 .project-content {

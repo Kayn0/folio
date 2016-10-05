@@ -61,11 +61,3 @@
 	left: 17px;
 }
 
-#project-ccp .next-btn {
- 	height:100px;
-  left: calc(100vw - 50px);
-}
-
-#project-ccp .prev-btn {
-	height:100px;
-}

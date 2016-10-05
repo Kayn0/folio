@@ -4,7 +4,7 @@ $(document).ready(function(){
   setTimeout(function(){
     $('body').addClass('loaded');
     $('h1').css('color','#222222');
-  }, 3000);
+  }, 0000);
 
   //Page transitions
   (function() {
@@ -20,9 +20,9 @@ $(document).ready(function(){
     function init(){
       triggerLoading.forEach(function(trigger){
         trigger.addEventListener('click', function(ev){
-          // ev.preventDefault();
+          
+          // show svg loader for 2000ms
           loader.show();
-          // after some time hide loader
           setTimeout(function(){
             loader.hide();
             pages.forEach(function(page){
@@ -37,8 +37,9 @@ $(document).ready(function(){
               //if hash or parent hash match, show class
               if ((ev.srcElement.hash == pageID) || (parentHash == pageID)) {
                 i = currentPage;
-                classie.addClass(page, 'show');               
-                // fix to ensure project pages load at top
+                classie.addClass(page, 'show');  
+
+                // fix to ensure project pages always load at top
                 if (pageID == "#project-atlas") {
                   $('html, body').animate({
                     scrollTop: $("#project-atlas").offset().top
@@ -65,7 +66,8 @@ $(document).ready(function(){
         triggerBack.addEventListener('click', function(ev){
           // ev.preventDefault();
           loader.show();
-          // after some time hide loader
+
+          
           setTimeout( function() {
             loader.hide();
             pages.forEach(function(page) {
@@ -86,7 +88,11 @@ $(document).ready(function(){
           i = 0;
           // ev.preventDefault();
           loader.show();
-          // after some time hide loader
+          
+          console.log(triggerCycle, 'kasjhfksaf');
+          console.log(ev.srcElement, 'ev.srcElement');
+          console.log(ev.srcElement.className, 'ev.srcElement.className');
+
           setTimeout( function() {
             loader.hide();
             pages.forEach(function(page) {
@@ -96,14 +102,14 @@ $(document).ready(function(){
               }
             });
 
-            if (ev.srcElement.className == "next-btn") {
+            if ((ev.srcElement.className == "next-btn") || (ev.srcElement.className == "pageload-cycle next-trigger")) {
               var nextPage = currentPage + 1;
               if (nextPage > 4) {
                 nextPage = 2;
               }
               currentPage = nextPage
               classie.addClass(pages[nextPage], 'show');
-            } else if (ev.srcElement.className == "prev-btn") {
+            } else if ((ev.srcElement.className == "prev-btn") || (ev.srcElement.className == "pageload-cycle prev-trigger")) {
               var prevPage = currentPage - 1;
               if (prevPage < 2) {
                 prevPage = 4;

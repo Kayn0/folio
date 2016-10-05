@@ -83,7 +83,7 @@ h2 {
 }
 
 h3 {
-  font-family: 'montserrat-ul', Times, serif;
+  font-family: 'montserrat-ul', helvetica, sans-serif;
   font-size: 40px;
   color: #BD492A;
   letter-spacing: 0.20vw;
@@ -92,7 +92,7 @@ h3 {
 }
 
 h4 {
-  font-family: 'montserrat-ul', Times, serif;
+  font-family: 'montserrat-ul', helvetica, sans-serif;
   font-size: 32px;
   color: #4C7171;
   letter-spacing: 0.20vw;
@@ -102,7 +102,7 @@ h4 {
 
 h5 {
   position: absolute;
-  font-family: 'montserrat-bold', Times, serif;
+  font-family: 'montserrat-bold', helvetica, sans-serif;
   font-size:20px;
   color:#BD492A;
   text-align: left;
@@ -110,9 +110,16 @@ h5 {
   margin: 0;
 }
 
+h6 {
+  font-family: 'montserrat-bold', helvetica, sans-serif;
+  font-size:16px;
+  color:#000;
+}
+
+
 p {
   color: #8EB3B3;
-  font-family: 'montserrat-light', Times, serif;
+  font-family: 'montserrat-light', helvetica, sans-serif;
   font-size: 16px;
   letter-spacing: 0.05vw;
   line-height: 1.5;
@@ -166,47 +173,6 @@ a {
 	height: 100vh;
 	width: 100%;
   display: block;
-}
-
-.close-btn {
-  margin: 20px;
-  position: fixed;
-  right: 0;
-  top: 0;
-  z-index: 9999;
-}
-
-.next-btn {
-  float: right;
-  transform: rotate(180deg);
-  left: calc(100vw - 47px);
-  position: absolute;
-}
-
-.next-btn,
-.prev-btn {
-  transition: filter 0.3s ease;
-  height: 75px;
-  -webkit-filter: drop-shadow(1px 1px 2px #ccc);
-  filter: drop-shadow(1px 1px 2px #ccc); 
-}
-
-
-.next-btn:hover,
-.prev-btn:hover {
-  -webkit-filter: drop-shadow(2px 2px 5px #8c8c8c);
-  filter: drop-shadow(2px 2px 5px #8c8c8c);
-}  
-
-.page-cycle {
-  height: 100px;
-  position: fixed;
-  top: 60vh;  
-  z-index: 99999;
-}
-
-.pageload-cycle {
-  position: absolute;
 }
 
 .logo-img:hover,
