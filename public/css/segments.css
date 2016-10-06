@@ -232,6 +232,8 @@ div.center {
   top:0px;
 }
 
+
+/***** Cancelled for now ****/
 .circle {
 	background-color: #BD492A;
 	border-radius: 50%;
@@ -239,6 +241,7 @@ div.center {
 	left: calc(100% - 22%);
 	position: relative;
   width: 120px;
+  opacity: 0;
 }
 
 .segment-para {

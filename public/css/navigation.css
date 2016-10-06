@@ -340,10 +340,12 @@
 
 
 .close-btn {
-  margin: 20px;
+  height: auto;
+  margin: 10px;
   position: fixed;
   right: 0;
   top: 0;
+  width: 40px;
   z-index: 9999;
 }
 
