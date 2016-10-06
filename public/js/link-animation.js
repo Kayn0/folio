@@ -1,15 +1,14 @@
 $(document).ready(function(){
-  $(window).scrollTop(0);
+  // $(window).scrollTop(0);
 
+
+  // **** Site preloader ***** //
   setTimeout(function(){
     $('body').addClass('loaded');
     $('h1').css('color','#222222');
-  }, 0000);
-
-  
-
+  }, 3000);
                                         
-  // smooth scroll 
+  // **** Smooth scroll ***** //
   $(function() {
     $('a[href*="#"]:not([href="#"])').click(function() {
       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -25,7 +24,7 @@ $(document).ready(function(){
     });
   });          
      
-  //Navigation link: click and hover effect               
+  // **** Navigation click and hover effect ***** //              
   (function() {
     [].slice.call(document.querySelectorAll('.menu')).forEach(function(menu) {
       var menuItems = menu.querySelectorAll('.menu__link');
@@ -71,15 +70,15 @@ $(document).ready(function(){
           $('.menu__item--current').removeClass('menu__item--current');
           $('.link4').addClass('menu__item--current');
         }
-        else if (scroll < page2) {
+        else if (scroll < 300) {
           $('.menu__item--current').removeClass('menu__item--current');
           $('.link1').addClass('menu__item--current');
         }
-        else if (scroll > page2 && scroll < (page2 + 200)) { 
+        else if (scroll > page2 && scroll < (page3 - 400)) { 
           $('.menu__item--current').removeClass('menu__item--current');
           $('.link2').addClass('menu__item--current');
         } 
-        else if (scroll > page3 && scroll < (page3 + 200)) {
+        else if (scroll > page3 && scroll < (page3 + 400)) {
           $('.menu__item--current').removeClass('menu__item--current');
           $('.link3').addClass('menu__item--current');
         }
@@ -87,13 +86,12 @@ $(document).ready(function(){
      });
   })();
 
-  //Animates page objects on trigger div and scroll position.
+  // ***** Animates page objects on trigger div and scroll position ***** //
   var trigger = $('.trigger').offset().top;
   var header = $(".clear-header");
   var caveRoof = $(".projects-layer-4");
 
   $(window).scroll(function(){
-
     var elem = $('.page-cycle');
     setTimeout(function() {
        elem.css({"opacity":"1","transition":"1.3s"}); 
@@ -101,7 +99,7 @@ $(document).ready(function(){
         elem.css({"opacity":"0","transition":"0.3s"});
 
     var scroll = $(window).scrollTop();
-    if (scroll >= 500) {
+    if (scroll > 0) {
       caveRoof.addClass('show-elem');
       header.removeClass("clear-header").addClass('transparent-header');
     } else {
