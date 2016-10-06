@@ -177,6 +177,7 @@
 	min-height: 1150px;
 	margin-top: -50px;
 	padding-top: 150px;
+	z-index: 9;
 }
 
 .cavern {
