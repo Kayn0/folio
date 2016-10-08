@@ -52,7 +52,7 @@
   }
 
 	.about-body { 
-    max-width: 100vw;
+    max-width: 90%;
     padding: 20px;
 	}
 
@@ -134,7 +134,7 @@
   }
 
 	#about-me {
-    min-height: 140vh;
+    min-height: 200vh;
     margin-top: -50px;
     padding-top: 100px;
   }
@@ -148,11 +148,15 @@
 		font-size: 6vw;
 	}
 
-	.footer-body,
-	.projects-body {
+	.footer-body {
 		max-width: 100vw;
     padding: 65px 20px;
   }	
+
+  .projects-body {
+    max-width: 100vw;
+    padding: 0;
+  }
 
 	.info-container h4 {
 		font-size: 24px;
@@ -177,6 +181,10 @@
 	.about-subheader {
     top: 15px;
   }
+  
+  .project-content h5 {
+    font-size: 15px;
+  }
 
   .line {
     width: 100%;
@@ -200,7 +208,7 @@
 	}
   
   .project-links {
-    margin: 0; 
+    margin: 0 auto; 
   }
 }
 

@@ -1,6 +1,6 @@
 $(document).ready(function(){
-  // $(window).scrollTop(0);
-
+  $('html').animate({scrollTop:0}, 1);
+  $('body').animate({scrollTop:0}, 1);
 
   // **** Site preloader ***** //
   setTimeout(function(){

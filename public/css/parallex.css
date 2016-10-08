@@ -69,31 +69,29 @@
   background-color: #72A0A0;
 }
 
-.projects-layer-2 {
-  background-image: url("../img/projects-bg2.png\a    ");
+.projects-layer-2,
+.projects-layer-3,
+.projects-layer-4 {
   background-position: bottom center;
   background-size: contain;
+  z-index: -1;
+}
+
+.projects-layer-2 {
+  background-image: url("../img/projects-bg2.png\a    ");
   bottom: 105vh;
   position: absolute;
-  z-index: -1;
 }
 
 .projects-layer-3 {
   background-image: url("../img/projects-bg1.png\a    ");
-  background-position: bottom center;
-  background-size: contain;
   bottom: 63vh;
   position: absolute;
-  z-index: -1;
 }
 
 .projects-layer-4 {
   background-image: url("../img/cave-roof-bg.png\a    ");
-  background-position: bottom center;
-  background-size: contain;  
-  display: none;
   top: -27vh;
-  z-index: -1;
 }
 
 @media only screen and (max-width: 768px) {
@@ -103,5 +101,12 @@
 
   #home-mobile {
     display: block;
-  }
+ }
+}
+
+@media only screen and (max-width: 400px) {
+  .projects-layer-3,
+  .projects-layer-4 {
+    display: none;
+  } 
 }

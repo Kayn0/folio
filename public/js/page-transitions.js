@@ -1,5 +1,6 @@
-$(document).ready(function(){
-  
+$(document).load().scrollTop(0);
+
+$(document).ready(function(){  
   //Page transitions
   (function() {
     var pageWrap = document.getElementById('pagewrap'),
@@ -71,7 +72,10 @@ $(document).ready(function(){
             });
             classie.addClass(pages[0], 'show');
             classie.addClass(pages[1], 'show');
-            $("html, body").animate({ scrollTop: 0 }, "fast");
+            $('html, body').animate({
+              scrollTop: $("#projects").offset().top
+            }, 0000);
+
           },2000);
         });
       });
@@ -128,6 +132,8 @@ $(document).ready(function(){
     }init();
   })();
 });
+
+
 
 // Browser fix for src.Element
 function getTarget(obj) {

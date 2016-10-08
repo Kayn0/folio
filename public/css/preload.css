@@ -24,7 +24,7 @@
   animation: spin 2s linear infinite;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: #3498db;
+  border-top-color: #72A0A0;
   display: block;
   height: 150px;
   left: 50%;
@@ -41,7 +41,7 @@
   bottom: 5px;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: #e74c3c;
+  border-top-color: #BD492A;
   content: "";
   left: 5px;
   position: absolute;
@@ -54,7 +54,7 @@
   -webkit-animation: spin 1.5s linear infinite;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: #f9c922;
+  border-top-color: #4C7171;
   bottom: 15px;
   content: "";
   left: 15px;
