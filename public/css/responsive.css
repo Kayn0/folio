@@ -125,8 +125,10 @@
 }
 
 @media (max-width:440px) {
-	#home-mobile { 
-    /*min-height: 100vh;*/
+  .projects-layer-2,
+  .projects-layer-3,
+  .projects-layer-4 {
+    display: none;
   }
 
 	#projects {
@@ -163,7 +165,7 @@
 	}
 
 	.clouds-mobile {
-    top: 60vh;
+    top: 48vh;
   }
 
   .photo-holder {
