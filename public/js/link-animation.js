@@ -1,13 +1,8 @@
-$(document).ready(function(){
+$(document).load(function(){
   $('html').animate({scrollTop:0}, 1);
   $('body').animate({scrollTop:0}, 1);
 
-  // **** Site preloader ***** //
-  setTimeout(function(){
-    $('body').addClass('loaded');
-    $('h1').css('color','#222222');
-  }, 3000);
-                                        
+
   // **** Smooth scroll ***** //
   $(function() {
     $('a[href*="#"]:not([href="#"])').click(function() {
@@ -84,7 +79,7 @@ $(document).ready(function(){
         }
       });
      });
-  })();
+    })();
 
   // ***** Animates page objects on trigger div and scroll position ***** //
   var trigger = $('.trigger').offset().top;
@@ -113,3 +108,5 @@ $(document).ready(function(){
     }
   });
 });
+        
+

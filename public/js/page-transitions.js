@@ -1,6 +1,7 @@
 $(document).load().scrollTop(0);
 
 $(document).ready(function(){  
+
   //Page transitions
   (function() {
     var pageWrap = document.getElementById('pagewrap'),
@@ -132,8 +133,6 @@ $(document).ready(function(){
     }init();
   })();
 });
-
-
 
 // Browser fix for src.Element
 function getTarget(obj) {

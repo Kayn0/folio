@@ -2,32 +2,32 @@
 
 @font-face {
   font-family: bebas-bold;
-  src: url(../fonts/BebasNeue-Bold.ttf);
+  src: url(../fonts/BebasNeue-Bold.otf) format('opentype');
 }
 
 @font-face {
     font-family: montserrat-bold;
-    src: url(../fonts/Montserrat-Bold.otf);
+    src: url(../fonts/Montserrat-Bold.otf) format('opentype');
 }
 
 @font-face {
     font-family: montserrat;
-    src: url(../fonts/Montserrat-Regular.otf);
+    src: url(../fonts/Montserrat-Regular.otf) format('opentype');
 }
 
 @font-face {
     font-family: montserrat-black;
-    src: url(../fonts/Montserrat-Black.otf);
+    src: url(../fonts/Montserrat-Black.otf) format('opentype');
 }
 
 @font-face {
     font-family: montserrat-light;
-    src: url(../fonts/Montserrat-Light.otf);
+    src: url(../fonts/Montserrat-Light.otf) format('opentype');
 }
 
 @font-face {
     font-family: montserrat-ul;
-    src: url(../fonts/Montserrat-UltraLight.otf);
+    src: url(../fonts/Montserrat-UltraLight.otf) format('opentype');
 }
 
 /***** Chrome scrollbar *****/
@@ -127,13 +127,6 @@ p {
   font-size: 16px;
   letter-spacing: 0.05vw;
   line-height: 1.5;
-}
-
-
--moz-document url-prefix() {
-    #categoryBackNextButtons {
-        width:486px;
-    }
 }
 
 .project-font-grey {
