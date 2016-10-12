@@ -92,6 +92,7 @@
 
 .projects-layer-4 {
   background-image: url("../img/cave-roof-bg.png\a    ");
+  display: none;
   top: -27vh;
 }
 
