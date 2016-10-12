@@ -12,10 +12,11 @@
 #preloader-wrapper h1 {
   color: #fff;
   font-size: 16px;
-  margin:0 auto;
+  font-weight: 300;
+  margin: 0 auto;
   position: relative;
   text-align: center;
-  top:51%;
+  top: 51%;
   z-index: 99999999; 
 }
 

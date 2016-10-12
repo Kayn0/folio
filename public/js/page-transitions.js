@@ -53,7 +53,7 @@ $(document).ready(function(){
                 classie.removeClass(page, 'show');
               } 
             });
-          },2000);
+          },3000);
         });
       }); 
 
@@ -76,7 +76,7 @@ $(document).ready(function(){
               scrollTop: $("#projects").offset().top
             }, 0000);
 
-          },2000);
+          },3000);
         });
       });
 
@@ -126,7 +126,7 @@ $(document).ready(function(){
             $('html, body').animate({
               scrollTop: $("#project-abc").offset().top
             }, 0);
-          },2000);
+          },3000);
         });
       });
     }init();

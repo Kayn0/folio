@@ -411,14 +411,14 @@ img.prev-btn {
   top: 0;
   margin: 0;
   color: #fff;
-  /*text-transform: uppercase;*/
-  white-space: nowrap;
   font-size: 16px;
+  font-weight: 300;
   line-height: 60px;
   opacity: 0;
   -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
   transition: opacity 0.3s, transform 0.3s;
   pointer-events: none;
+  white-space: nowrap;
 }
 
 .pageload-cycle.prev-trigger h6 {
