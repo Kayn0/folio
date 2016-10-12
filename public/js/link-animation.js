@@ -2,7 +2,6 @@ $(document).load(function(){
   $('html').animate({scrollTop:0}, 1);
   $('body').animate({scrollTop:0}, 1);
 
-
   // **** Smooth scroll ***** //
   $(function() {
     $('a[href*="#"]:not([href="#"])').click(function() {
