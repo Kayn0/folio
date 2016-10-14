@@ -1,6 +1,11 @@
 $(document).load().scrollTop(0);
 
-$(document).ready(function(){  
+$(document).ready(function(){
+ setTimeout(function() {
+    // // preload images TODO
+    $('body').addClass('loaded');
+    $('h1').css('color','#222222');
+  }, 3000);
 
   //Page transitions
   (function() {
