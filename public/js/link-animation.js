@@ -57,7 +57,7 @@ $(document).load(function(){
         el.addEventListener('mouseout', removeCurrent);
       });
 
-      //Set relevant active link as user scolls.
+      //Set relevant active link as user scrolls.
       $(window).scroll(function(){
         var scroll = $(window).scrollTop();
         if($(window).scrollTop() + $(window).height() > $(document).height() - 50) {

@@ -28,14 +28,14 @@
           <span>K</span><span>a</span><span>n</span><span>e</span>
           <span>M</span><span>a</span><span>s</span><span>l</span><span>e</span><span>n</span>
         </a>
-        <h2 class="trigger">WEB DEVELOPER</h2>
+        <h2 class="trigger">DESIGNER / DEVELOPER</h2>
       </div>
     </div> 
 
     <div id="home-mobile">
       <div class="header-text-mobile">
         <h1 class="">KANE MASLEN</h1>
-        <h2 class="trigger">WEB DEVELOPER</h2>
+        <h2 class="trigger">DESIGNER / DEVELOPER</h2>
       </div>
       
       <div class="mobile-bg"></div>
@@ -55,31 +55,31 @@
 
       <div class="info">
         <div class="about-body">
-          <h3>I love to create.</h3>
+          <h3>I love to create</h3>
           <div class="line center"></div>
-          <p class="segment-para">I'm an experienced Brisbane based web developer, who has a passion and talent for creating websites and apps.</p>
+          <p class="segment-para">Im a passionate, talented UI designer / developer, with over 9 years experience creating websites and mobile phone applications.</p>
         </div>
       
         <div class="info-container">
           <div class="info delay-1">
-            <h4 class="about-subheader">Design.</h4>
+            <h4 class="about-subheader">Design</h4>
             <div class="circle"></div>
             <div class="line"></div>
-            <p class="snippet">I enjoy designing interactive experiences from conceptual designs through to wireframes and prototyping. My background in graphic design coupled with a desire to follow web design trends, means I design responsive user interfaces using sound design principles.</p>
+            <p class="snippet">I strive to understand and analyse the problems of the end-user and produce solutions that solve these challenges. Drawing on my expertise in graphic design and IT, I utilise sound design principles to produce responsive user interfaces and user flows that captivate and engage the audience.</p>
           </div>
         
           <div class="info delay-2">
-            <h4 class="about-subheader">Develop.</h4>
+            <h4 class="about-subheader">Develop</h4>
             <div class="circle"></div>
             <div class="line"></div>
-            <p class="snippet">I'm passionate about web and application development and enjoy the challenge of coming up with solutions to best communicate to the user. I have experience with a wide range of languages and frameworks, recently I’ve been using a combination of AngularJS, HTML5, SASS and JQuery.</p>
+            <p class="snippet">Im passionate about web and application development and enjoy the challenge of developing interactive solutions. I have experience with a wide range of languages and frameworks. Recently I have been using React, AngularJS, Javascript, HTML and CSS.</p>
           </div>
 
           <div class="info delay-3">
-            <h4 class="about-subheader">Deliver.</h4>
+            <h4 class="about-subheader">Deliver</h4>
             <div class="circle"></div>
             <div class="line"></div>
-            <p class="snippet">I'm committed, hard working and I love what I do.</p>
+            <p class="snippet">Nearly a decade of designing, developing and delivering projects, Im committed, passionate and I love what I do.</p>
           </div>
         </div> 
       </div> 
@@ -98,27 +98,48 @@
         <h3 class="">Projects</h3>
         <div class="line center line-width"></div>
         <div class="projects-text">
-          <p>This is a sample of some of the projects that I have recently developed. Click on a project below for a detailed overview.</p>
+          <p>Please click on a project for a detailed overview.</p>
         </div>
 
         <div class="project-links">
-          <a class="pageload-link project-content atlas-link" href="#project-atlas">
-            <img src="img/atlas-logo.png" alt="Cultural Altas logo" />
-            <h5>The Cultural Atlas</h5>
-             <p>An informational website on culture, developed for SBS.</p>
-          </a>
 
-          <a class="pageload-link project-content abc-link" href="#project-abc">
-            <img src="img/abc-logo.png" alt="A plus for kids logo" />
-            <h5>A+ for kids</h5>
-             <p>A fun english learning app, created for ABC kids.</p>
-          </a>
+            <a class="pageload-link project-content nookal-bg" href="#project-nookal">
+                <img src="img/nookal-logo-1.png" alt="Cultural Altas logo" />
+                <h5 class="text-wrap">Nookal</h5>
+                <p>Smart Practice Management for the Allied Health Industry</p>
+            </a>
 
-          <a class="pageload-link project-content ccp-link" href="#project-ccp">
-            <img src="img/ccp-logo.png" alt="Cultural Altas logo" />
-            <h5 class="text-wrap">Cultural Competence Program</h5>
-             <p>An app that allows users to learn, test and gauge their cultural competency.</p>
-          </a>
+            <a class="pageload-link project-content atlas-link trademark-bg" href="#project-trademark">
+                <img src="img/clarivate-logo-1.png" alt="Cultural Altas logo" />
+                <h5 class="text-wrap">Trademark Vision</h5>
+                <p>Machine learning web solutions for IP Australia</p>
+            </a>
+
+            <a class="pageload-link project-content abc-link get-homii-bg" href="#project-gethomii">
+                <img src="img/gethomii-logo.png" alt="Cultural Altas logo" />
+                <h5 class="text-wrap">Get Homii</h5>
+                <p>An app that connects renters with properties to buy.</p>
+            </a>
+
+            <a class="pageload-link project-content ccp-link" href="#project-ccp">
+                <img src="img/ccp-logo.png" alt="Cultural Altas logo" />
+                <h5 class="text-wrap">Cultural Competence Program</h5>
+                <p>An app that allows users to learn, test and gauge their cultural competency.</p>
+            </a>
+
+            <a class="pageload-link project-content atlas-link" href="#project-atlas">
+                <img src="img/atlas-logo.png" alt="Cultural Altas logo" />
+                <h5>The Cultural Atlas</h5>
+                <p>An informational website on culture, developed for SBS.</p>
+            </a>
+
+            <a class="pageload-link project-content abc-link" href="#project-abc">
+                <img src="img/abc-logo.png" alt="A plus for kids logo" />
+                <h5>A+ for kids</h5>
+                <p>A fun english learning app for kids, created for ABC kids.</p>
+            </a>
+
+
         </div>
       </div>
 
@@ -155,15 +176,27 @@
   </div>
 
   <section>
+    <%= erb :project_nookal %>
+  </section>
+
+  <section>
+    <%= erb :project_trademark %>
+  </section>
+
+  <section>
+    <%= erb :project_gethomii %>
+  </section>
+
+  <section>
+    <%= erb :project_ccp %>
+  </section>
+
+  <section>
     <%= erb :project_atlas %>
   </section>
 
   <section>
     <%= erb :project_abc %>
-  </section>
-
-  <section>
-    <%= erb :project_ccp %>
   </section>
 
   <!-- Page loader-->

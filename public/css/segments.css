@@ -196,7 +196,7 @@
 
 .about-body {
 	position: relative;
-	max-width: 1024px;
+	max-width: 600px;
 	margin: 50px auto 0;
 	text-align: center;
 	width: 80%;
@@ -247,11 +247,11 @@ div.center {
 .segment-para {
 	color: #8eb3b3;
 	line-height: 1.5;
-  margin: 10px auto;
-  max-width: 450px;
+	margin: 10px auto;
+	max-width: 470px;
 	position: relative;
-  text-align: center;
-  width: 100%;
+	text-align: center;
+	width: 100%;
 }
 
 .snippet {
@@ -312,6 +312,7 @@ div.center {
   min-width:100vw;
   width: 100%;
 }
+
 .projects-body {
 	width: 100%;
 }
@@ -319,22 +320,22 @@ div.center {
 .footer-body,
 .projects-body {
 	margin: 0 auto;
-	margin-bottom: 300px;
-  max-width: 768px;
-  overflow: hidden;
-  position: relative;
-  text-align: center;
-  top: -10vh;
+	margin-bottom: 300px !important;
+  	max-width: 768px;
+  	overflow: hidden;
+  	position: relative;
+  	text-align: center;
+  	top: -20vh;
 }
 
 .footer-body {
 	margin-bottom: 0;
 	top: 0;	
-	padding: 100px 20px 0;
+	padding: 200px 20px 0;
 }
 
 .projects-text {
-	margin:20px auto 50px; 
+	margin: 20px auto 10px;
 	max-width: 600px;
 	color: #1C2D2D;
 	text-align: center;
@@ -351,8 +352,8 @@ div.center {
 }
 
 .project-links {
-	max-width: 768px;
-  height: 600px;
+  max-width: 768px;
+  height: 900px;
   margin: 0 auto;
   position: relative;
   width: 90%;
@@ -363,6 +364,7 @@ div.center {
   background-color: #131e1e;
 	border-radius: 12px;
 	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
+	border: 1px solid #BD492A;
 	display: inline-block;
 	height: 200px;
 	position: relative;
@@ -400,17 +402,39 @@ div.center {
 
 .ccp-link {
 	background: url("../img/ccp-link.png") no-repeat;
-	margin-top:4%;
+	margin: 20px 0;
 	width: 100%;
 }
 
+.trademark-bg {
+	background: url("../img/trademark-bg.png") no-repeat;
+	background-position: center bottom !important;
+}
+
+.get-homii-bg {
+	background: url("../img/get-homii-fence.png") no-repeat;
+	background-position: center bottom !important;
+}
+.nookal-bg {
+	background: url("../img/nookal-beat.png") no-repeat;
+	margin-top:4%;
+	width: 100%;
+	background-position: center bottom 10px !important;
+	margin-bottom: 20px;
+}
+.nookal-bg p {
+	width: 520px;
+}
+
+.trademark-bg,
+.nookal-bg,
 .atlas-link,
 .abc-link,
 .ccp-link {
 	background-position: bottom center;
-  background-size: contain;
-  background-color: #231f20;
-  overflow: hidden;
+	background-size: contain;
+  	background-color: #231f20;
+  	overflow: hidden;
 }
 
 .landscape-2 {
@@ -432,12 +456,16 @@ div.center {
 
 .project-content p {
 	color: #fff;
-	bottom: 30px;
+	bottom: 40px;
 	line-height: 1.5;
-	max-width:500px;
+	max-width: 540px;
 	right: 0;
 	-webkit-transform: translate3d(0,100%,0);
 	transform: translate3d(0,100%,0);
+}
+
+.project-content.nookal-bg p {
+	bottom: 60px;
 }
 
 .project-content h5 {

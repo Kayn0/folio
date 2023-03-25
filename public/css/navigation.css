@@ -18,7 +18,7 @@
 }
 
 .transparent-header {
-  background-color: rgba(255,255,255,0.3);
+  background-color: #9CBCBC;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   display: flex;
   top: 0;
@@ -75,7 +75,7 @@
 }
 
 .menu__link {
-  color:#FFF;
+  color: #FFF;
   cursor: pointer;
   display: block;
   font-family: 'montserrat-light', Times, serif;
@@ -89,6 +89,7 @@
   -webkit-touch-callout: none;
   -khtml-user-select: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  transition: color 0.3s ease;
 }
 
 .menu__link:hover,
@@ -105,7 +106,7 @@
 }
 
 .menu--ferdinand .menu__link {
-  color: #ffffff;
+  color: #231F20;
   display: block;
   margin: 0 1em;
   padding: 0 20px;
@@ -368,7 +369,7 @@ img.prev-btn {
   position: fixed;
   top: 50vh;
   width: calc(100vw - 10px); 
-  z-index: 99999;
+  z-index: 99998;
 }
 
 .pageload-cycle {

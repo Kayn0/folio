@@ -2,21 +2,20 @@ $(document).load().scrollTop(0);
 
 $(document).ready(function(){
  setTimeout(function() {
-    // // preload images TODO
     $('body').addClass('loaded');
     $('h1').css('color','#222222');
   }, 3000);
 
   //Page transitions
   (function() {
-    var pageWrap = document.getElementById('pagewrap'),
+    let pageWrap = document.getElementById('pagewrap'),
       pages = [].slice.call(pageWrap.querySelectorAll('div.container')),
       currentPage = 0,
       triggerLoading = [].slice.call(pageWrap.querySelectorAll('a.pageload-link')),
       triggerBack = [].slice.call(pageWrap.querySelectorAll('a.pageload-back')),
       triggerCycle = [].slice.call(pageWrap.querySelectorAll('a.pageload-cycle')),
       loader = new SVGLoader(document.getElementById('loader'), {speedIn : 200, easingIn : mina.linear});
-      var i = 0;
+      let i = 0;
 
     function init(){
       triggerLoading.forEach(function(trigger){
@@ -27,34 +26,47 @@ $(document).ready(function(){
             loader.hide();
 
             // multibrowser fix for ev.srcElement
-            var clickObj = getTarget(ev);
+            let clickObj = getTarget(ev);
             pages.forEach(function(page){
-              pageID = '#' + page.id;
-              parentHash = $(clickObj.hash).selector;
-              if (pageID == parentHash)  {
+              let pageID = '#' + page.id;
+              let parentHash = $(clickObj.hash).selector;
+              if (pageID === parentHash)  {
                 currentPage = i;
               }
               i++;
 
               //if hash or parent hash match, show class
-              if (parentHash == pageID) {
+              if (parentHash === pageID) {
                 i = currentPage;
                 classie.addClass(page, 'show');  
 
                 // Ensure project pages always load at top
-                if (pageID == "#project-atlas") {
+                if (pageID === "#project-nookal") {
                   $('html, body').animate({
-                    scrollTop: $("#project-atlas").offset().top
+                    scrollTop: $("#project-nookal").offset().top
                   }, 0);
-                } else if (pageID == "#project-abc") {
+                } else if (pageID === "#project-trademark") {
                   $('html, body').animate({
-                    scrollTop: $("#project-abc").offset().top
+                    scrollTop: $("#project-trademark").offset().top
                   }, 0);
-                } else if (pageID == "#project-ccp") {
+                } else if (pageID === "#project-gethomii") {
+                  $('html, body').animate({
+                    scrollTop: $("#project-gethomii").offset().top
+                  }, 0);
+                } else if (pageID === "#project-ccp") {
                   $('html, body').animate({
                     scrollTop: $("#project-ccp").offset().top
                   }, 0);
+                } else if (pageID === "#project-atlas") {
+                  $('html, body').animate({
+                    scrollTop: $("#project-atlas").offset().top
+                  }, 0);
+                } else {
+                  $('html, body').animate({
+                    scrollTop: $("#project-abc").offset().top
+                  }, 0);
                 }
+
               } else if (classie.hasClass(page, 'show')){
                 classie.removeClass(page, 'show');
               } 
@@ -71,7 +83,7 @@ $(document).ready(function(){
           setTimeout( function() {
             loader.hide();
             pages.forEach(function(page) {
-              pageID = '#' + page.id;
+
               if (classie.hasClass(page, 'show')){
                 classie.removeClass( page, 'show' );
               }
@@ -80,7 +92,7 @@ $(document).ready(function(){
             classie.addClass(pages[1], 'show');
             $('html, body').animate({
               scrollTop: $("#projects").offset().top
-            }, 0000);
+            });
 
           },3000);
         });
@@ -89,32 +101,33 @@ $(document).ready(function(){
       // ****** Cycle through the project pages ******* //
       triggerCycle.forEach(function(triggerCycle){
         triggerCycle.addEventListener('click', function(ev){
-          i = 0;
+          let i = 0;
           loader.show();
           setTimeout( function() {
             loader.hide();
 
             // multibrowser fix for ev.srcElement
-            var clickObj = getTarget(ev);
+            let clickObj = getTarget(ev);
 
             pages.forEach(function(page) {
-              pageID = '#' + page.id;
+              let pageID = '#' + page.id;
               if (classie.hasClass(page, 'show')){
                 classie.removeClass( page, 'show' );
               }
             });
 
-            if ((clickObj.className == "next-btn") || (clickObj.className == "pageload-cycle next-trigger")) {
-              var nextPage = currentPage + 1;
-              if (nextPage > 4) {
+            if ((clickObj.className === "next-btn") || (clickObj.className === "pageload-cycle next-trigger")) {
+              let nextPage = currentPage + 1;
+              if (nextPage > 7) {
                 nextPage = 2;
               }
               currentPage = nextPage
+
               classie.addClass(pages[nextPage], 'show');
             } else if ((clickObj.className == "prev-btn") || (clickObj.className == "pageload-cycle prev-trigger")) {
               var prevPage = currentPage - 1;
               if (prevPage < 2) {
-                prevPage = 4;
+                prevPage = 7;
               }
               currentPage = prevPage
               classie.addClass(pages[prevPage], 'show');
@@ -122,7 +135,19 @@ $(document).ready(function(){
 
             // ensure projects pages always load at top
             $('html, body').animate({
-              scrollTop: $("#project-ccp").offset().top
+              scrollTop: $("#project-nookal").offset().top
+            }, 0),
+
+            $('html, body').animate({
+              scrollTop: $("#project-trademark").offset().top
+            }, 0),
+
+            $('html, body').animate({
+              scrollTop: $("#project-gethomii").offset().top
+            }, 0),
+
+            $('html, body').animate({
+                  scrollTop: $("#project-ccp").offset().top
             }, 0),
 
             $('html, body').animate({
@@ -132,6 +157,7 @@ $(document).ready(function(){
             $('html, body').animate({
               scrollTop: $("#project-abc").offset().top
             }, 0);
+
           },3000);
         });
       });

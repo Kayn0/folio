@@ -1,0 +1,211 @@
+.nookal-banner {
+    background: #009FCC;
+    display: flex;
+    height: 200px;
+    box-shadow: 2px 0 3px #333;
+    position: relative;
+}
+
+.nookal-logo {
+    padding: 40px;
+}
+
+#project-nookal .flex-container.flex-col {
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#project-nookal .flex-container.flex-row {
+    justify-content: space-between;
+}
+
+#project-nookal h2 {
+    color: #373737;
+    font-family: 'montserrat-black', Times, serif;
+    font-size: 52px;
+    letter-spacing: 0;
+    padding: 0;
+}
+
+#project-nookal h3 {
+    color: #009FCC;
+    font-family: 'montserrat-bold', Times, serif;
+    font-size: 32px;
+    letter-spacing: 0;
+    padding: 0;
+    margin: 0;
+}
+#project-nookal h6 {
+    margin-bottom: -10px;
+}
+.top-margin {
+    margin-top: 20px;
+}
+
+.nookal-link {
+    background: #009FCC;
+    z-index: 99999;
+}
+
+.extra-content {
+    border-bottom: 10px solid #0095ac;
+    box-shadow: 2px 0 3px #333;
+    background-color: #fff;
+}
+
+.dark-bg {
+    background-color: #373737;
+    border-bottom: 10px solid #0095ac;
+    color: #fff;
+}
+.white-text {
+    color: #fff;
+}
+#project-nookal .text-align.minor {
+    max-width: 320px;
+    z-index: 999;
+}
+
+#project-nookal .gif-resize {
+    width: 50%;
+}
+
+#project-nookal .atlas-link-btn {
+    width: 80%;
+}
+
+#project-nookal .atlas-link-btn:hover {
+    width: calc(100% - 20px);
+}
+
+#project-nookal .atlas-gif {
+    left: 16px;
+    top: 12px;
+}
+
+#project-nookal ul.project-font-grey {
+    flex: 1;
+    font-family: 'montserrat-light', helvetica, sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.05vw;
+    list-style-type: none;
+    line-height: 28px;
+}
+
+#project-nookal .list-container {
+    border: 1px solid #74BFDD;
+    background-color: #FAFAFA;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+#project-nookal .design-image img {
+    width: 260px;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+#project-nookal .design-image img.small {
+    width: auto;
+    height: 130px;
+}
+
+#project-nookal .padded {
+    margin: 30px 0;
+}
+
+#project-nookal img.arrow-image {
+    box-shadow: none;
+    width: 37px;
+    height: auto;
+}
+
+#project-nookal .bump-size {
+    width: 50%;
+    margin-top: 60px;
+}
+
+#project-nookal .grid {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+#project-nookal .grid::after {
+    content: "";
+    flex: auto;
+}
+
+#project-nookal .box {
+    color: #fff;
+    border-radius: 3px;
+    display: flex;
+    font-family: 'montserrat', Times, serif;
+    font-size: 16px;
+    height: auto;
+    line-height: 24px;
+    margin: 20px 0 0;
+    padding: 20px;
+    text-align: center;
+    width: calc(50% - 50px);
+    vertical-align: center;
+    align-items: center;
+
+}
+
+#project-nookal .box.style-1 {
+    background-color: #009FCC;
+}
+
+#project-nookal .box.style-2 {
+    background-color: #C6589A;
+}
+
+#project-nookal .box.style-3 {
+    background-color: #994B93;
+}
+
+#project-nookal .box.style-4 {
+    background-color: #8165B2;
+}
+
+#project-nookal .box.style-5 {
+    background-color: #5E7BC6;
+}
+
+#project-nookal .low-res {
+    height: 100%;
+    margin-top: 80px;
+    max-width: 280px;
+    border-radius: 3px;
+}
+
+#project-nookal .flex-col {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#project-nookal .set-height {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#project-nookal .before-after img {
+    height: 200px;
+    width: auto;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+#project-nookal .full-width {
+    max-width: 768px;
+    width: 100%;
+}
+
+#project-nookal .top-space {
+    margin-top: 60px;
+}

@@ -2,7 +2,7 @@
 
 @media only screen and (max-width:1725px) {    
   .projects-body {
-	  top: -5vh;
+	  top: -10vh;
   }
 }
 
@@ -14,7 +14,7 @@
 
 @media only screen and (min-width:2100px) {    
   .layer-overlay {
-    background-image: url("../img/tree1.png\a    ");
+    background-image: url("../img/tree1.png");
   }
 }
 
@@ -30,7 +30,7 @@
   }
 
   #projects {
-    min-height: 1380px;
+    min-height: 1500px;
   }
 }
 
@@ -99,7 +99,11 @@
 	#home-mobile {
 	  margin-bottom: 40px;
 	}
-  
+
+    #projects {
+        min-height: 1700px;
+    }
+
   .logo {
     width: 70px;
   }
@@ -116,12 +120,16 @@
 	.abc-link {
 		float: none;
 		margin-top: 4%;
-    width: 100%;
+        width: 100%;
 	}
 
 	.project-content p { 
-  	max-width: 350px;
-  }
+  	    max-width: 440px;
+
+    }
+    .pageload-link {
+        margin: 0 0 20px 0 !important;
+    }
 }
 
 @media (max-width:440px) {
@@ -134,7 +142,12 @@
 	#projects {
     margin-top: -2px;
   }
-
+    .project-content p {
+        max-width: 350px;
+    }
+    .project-content.nookal-bg p {
+        bottom: 40px;
+    }
 	#about-me {
     min-height: 200vh;
     margin-top: -50px;
@@ -249,14 +262,38 @@
 
 
 @media (max-width:725px){
-
+    #project-nookal .list-container {
+        flex-direction: column;
+        width: calc(100% - 40px);
+        padding: 20px;
+    }
+    #project-nookal img.arrow-image {
+        opacity: 0;
+    }
+    .low-res {
+        display: none;
+    }
+    #project-nookal .before-after img {
+        height: auto;
+        width: 100%;
+    }
+    #project-nookal ul.project-font-grey {
+        margin: 0 !important;
+    }
 	#project-ccp h2 {
-  	padding: 20px 0 0;
+  	    padding: 20px 0 0;
 	}
-  
-  #project-ccp .gif-container {
-    text-align: center;
-  }
+    .design-image {
+        display: none;
+    }
+    #project-ccp .gif-container {
+        text-align: center;
+    }
+
+    #project-nookal .atlas-gif {
+        left: 6%;
+        top: 5%;
+    }
 
 	.image-container,
 	.gif-container {
@@ -268,11 +305,21 @@
 		width:100%;
 	}
 
+    #project-nookal .text-align.minor {
+        max-width: 80%;
+    }
+
 	.content-wrapper {
 		display: flex;
-    flex-direction: column;
-    justify-content: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 	}
+
+    #project-nookal .bump-size {
+        width: 100%;
+        margin-top: 30px;
+    }
 
 	.row-text,
 	.text-align {
@@ -285,9 +332,9 @@
 	}
 
 	.atlas-gif {
-   	left: 3vw;
-    top: 3vw;
-    width: 93%;
+        left: 3vw;
+        top: 3vw;
+        width: 90%;
 	}
 
 	.ccp-phone-gif {
@@ -296,48 +343,48 @@
 
 	.center-div {
 		position: relative;
-    text-align: center;
-    margin-top: 50px;
+        text-align: center;
+        margin-top: 50px;
 	}
 	
 	.badge-margin {
-    margin-top: 20px;
-    text-align: center;
+        margin-top: 20px;
+        text-align: center;
 	}
 
 	.card-holder {
 		height: 400px;
-    left: calc(50% - 150px);
-    margin-top: 60px;
-    position: relative;
-    width: 400px;
-  }
+        left: calc(50% - 150px);
+        margin-top: 60px;
+        position: relative;
+        width: 400px;
+    }
 
-  .abc-ipad {
-    width: 45%;
-  }
+    .abc-ipad {
+        width: 45%;
+    }
   
-  .abc-gif {
-    margin: 0 auto;
-	}
+    .abc-gif {
+        margin: 0 auto;
+    }
 
-  .row {
-  	text-align: center;
-  }
+    .row {
+        text-align: center;
+    }
 
-  .wireframes img {
-    margin: auto;
-	}
+    .wireframes img {
+        margin: auto;
+    }
 
 	.block-a, 
 	.block-b, 
 	.block-c {
-     float: none; 
-  }
+        float: none;
+    }
 
-  .atlas-link-btn {
-   	margin-bottom: 40px;
-  }
+    .atlas-link-btn {
+        margin-bottom: 20px;
+    }
 
   .bump-left {
   	left: calc(50% - 137px);
@@ -416,8 +463,9 @@
 
 }
 
-@media (max-width:325px){
-	.ccp-phone-gif {
-    left: 10px;
+@media (max-width:325px) {
+    .ccp-phone-gif {
+        left: 10px;
+    }
 }
 
