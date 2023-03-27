@@ -456,8 +456,8 @@ div.center {
 
 .project-content p {
 	color: #fff;
-	bottom: 40px;
-	line-height: 1.5;
+	bottom: 35px;
+	line-height: 1.4;
 	max-width: 540px;
 	right: 0;
 	-webkit-transform: translate3d(0,100%,0);
@@ -465,7 +465,7 @@ div.center {
 }
 
 .project-content.nookal-bg p {
-	bottom: 60px;
+	bottom: 58px;
 }
 
 .project-content h5 {
