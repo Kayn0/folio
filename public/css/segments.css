@@ -327,7 +327,7 @@ div.center {
   	overflow: hidden;
   	position: relative;
   	text-align: center;
-  	top: -23vh;
+  	top: -20vh;
 }
 
 .footer-body {
@@ -458,16 +458,19 @@ div.center {
 
 .project-content p {
 	color: #fff;
-	top: 45px;
+	top: 50px;
+	font-size: 14px;
+	font-weight: bold;
 	line-height: 1.4;
-	max-width: 540px;
+	width: calc(100% - 30px);
 	right: 0;
+	padding: 10px 20px 10px 10px !important;
 	-webkit-transform: translate3d(0,100%,0);
 	transform: translate3d(0,100%,0);
 }
 
 .project-content.nookal-bg p {
-	top: 45px;
+	top: 50px;
 }
 
 .project-content h5 {

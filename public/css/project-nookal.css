@@ -37,7 +37,17 @@
 }
 #project-nookal h6 {
     margin-bottom: -10px;
+    line-height: 1.6;
 }
+
+#project-nookal p.reset {
+    margin: 0 0 10px;
+}
+
+#project-nookal .design-image.set-height.top-space {
+    margin-top: 35px;
+}
+
 .top-margin {
     margin-top: 20px;
 }
@@ -86,10 +96,11 @@
 #project-nookal ul.project-font-grey {
     flex: 1;
     font-family: 'montserrat-light', helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     letter-spacing: 0.05vw;
     list-style-type: none;
-    line-height: 28px;
+    line-height: 32px;
+    margin: 20px 0;
 }
 
 #project-nookal .list-container {
@@ -117,7 +128,7 @@
 
 #project-nookal img.arrow-image {
     box-shadow: none;
-    width: 37px;
+    width: 20px;
     height: auto;
 }
 

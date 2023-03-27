@@ -117,7 +117,7 @@ h5 {
 h6 {
   font-family: 'montserrat-bold', helvetica, sans-serif;
   font-size:16px;
-  color:#000;
+  color: #333333;
 }
 
 
@@ -131,15 +131,15 @@ p {
 
 .project-font-grey {
   color: #333333;
-  line-height: 2;
+  line-height: 1.6;
   text-align: justify;
   text-justify: inter-word;
 }
 
 .project-font-white {
   color: ghostwhite;
-  line-height: 2;
-  margin-bottom:30px;
+  line-height: 1.6;
+  margin-bottom: 30px;
   text-align: justify;
   text-justify: inter-word;
 }
