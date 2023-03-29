@@ -1,8 +1,8 @@
 .nookal-banner {
+    box-shadow: 2px 0 3px #333;
     background: #009FCC;
     display: flex;
     height: 200px;
-    box-shadow: 2px 0 3px #333;
     position: relative;
 }
 
@@ -11,8 +11,8 @@
 }
 
 #project-nookal .flex-container.flex-col {
-    justify-content: space-between;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 #project-nookal .flex-container.flex-row {
@@ -35,9 +35,10 @@
     padding: 0;
     margin: 0;
 }
+
 #project-nookal h6 {
-    margin-bottom: -10px;
     line-height: 1.6;
+    margin-bottom: -10px;
 }
 
 #project-nookal .pageload-cycle h6{
@@ -62,9 +63,9 @@
 }
 
 .extra-content {
+    background-color: #fff;
     border-bottom: 10px solid #0095ac;
     box-shadow: 2px 0 3px #333;
-    background-color: #fff;
 }
 
 .dark-bg {
@@ -72,9 +73,11 @@
     border-bottom: 10px solid #0095ac;
     color: #fff;
 }
+
 .white-text {
     color: #fff;
 }
+
 #project-nookal .text-align.minor {
     max-width: 320px;
     z-index: 999;
@@ -117,13 +120,14 @@
 }
 
 #project-nookal .design-image img {
-    width: 260px;
     border-radius: 3px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    width: 260px;
 }
+
 #project-nookal .design-image img.small {
-    width: auto;
     height: 130px;
+    width: auto;
 }
 
 #project-nookal .padded {
@@ -132,13 +136,13 @@
 
 #project-nookal img.arrow-image {
     box-shadow: none;
-    width: 20px;
     height: auto;
+    width: 20px;
 }
 
 #project-nookal .bump-size {
-    width: 50%;
     margin-top: 60px;
+    width: 50%;
 }
 
 #project-nookal .grid {
@@ -153,8 +157,9 @@
 }
 
 #project-nookal .box {
-    color: #fff;
+    align-items: center;
     border-radius: 3px;
+    color: #fff;
     display: flex;
     font-family: 'montserrat', Times, serif;
     font-size: 16px;
@@ -163,10 +168,8 @@
     margin: 20px 0 0;
     padding: 20px;
     text-align: center;
-    width: calc(50% - 50px);
     vertical-align: center;
-    align-items: center;
-
+    width: calc(50% - 50px);
 }
 
 #project-nookal .box.style-1 {
@@ -190,10 +193,10 @@
 }
 
 #project-nookal .low-res {
+    border-radius: 3px;
     height: 100%;
     margin-top: 80px;
     max-width: 280px;
-    border-radius: 3px;
 }
 
 #project-nookal .flex-col {
@@ -203,17 +206,17 @@
 }
 
 #project-nookal .set-height {
-    height: 200px;
     display: flex;
     flex-direction: column;
+    height: 200px;
     justify-content: center;
 }
 
 #project-nookal .before-after img {
-    height: 200px;
-    width: auto;
     border-radius: 3px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    height: 200px;
+    width: auto;
 }
 
 #project-nookal .full-width {

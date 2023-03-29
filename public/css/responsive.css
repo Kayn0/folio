@@ -241,14 +241,13 @@
 
 	.ipad-gif {
 		left: 2.5vw;
-    position: absolute;
-    top: 5vw;
-    width: 86%;
-  }
+        position: absolute;
+        top: 5vw;
+        width: 86%;
+    }
 }
 
 @media (max-width:768px){
-	
   .text-align {
 		max-width: 320px;
 		width: 100%;
@@ -264,22 +263,31 @@
 @media (max-width:725px){
     #project-nookal .list-container {
         flex-direction: column;
-        width: calc(100% - 40px);
         padding: 20px;
+        width: calc(100% - 40px);
     }
+
     #project-nookal img.arrow-image {
         opacity: 0;
     }
+
     .low-res {
         display: none;
     }
+
     #project-nookal .before-after img {
         height: auto;
         width: 100%;
     }
     #project-nookal ul.project-font-grey {
         margin: 0 !important;
+        padding-left: 20px;
     }
+
+    #project-nookal ul.project-font-grey li {
+        text-align: left;
+    }
+
 	#project-ccp h2 {
   	    padding: 20px 0 0;
 	}
@@ -411,6 +419,9 @@
   img.atlas-mobile {  
     width: 45%;
   }
+    #project-nookal .box {
+        width: calc(50% - 40px);
+    }
 }
 
 @media (max-width:390px){
