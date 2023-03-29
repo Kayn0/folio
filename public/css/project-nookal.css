@@ -40,6 +40,10 @@
     line-height: 1.6;
 }
 
+#project-nookal h6.pageload-cycle {
+    line-height: 60px;
+}
+
 #project-nookal p.reset {
     margin: 0 0 10px;
 }
