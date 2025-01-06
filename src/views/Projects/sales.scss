@@ -1,0 +1,54 @@
+#sales-dashboard {
+  .page {
+    .note {
+      height: 130px;
+      background: #457B9D;
+    }
+    .alt-flexed {
+      justify-content: flex-start;
+      display: flex;
+      flex-direction: row;
+
+      .note {
+        background: #304269;
+        &:first-child {
+          margin-right: 10px;
+        }
+      }
+    }
+    .img-bg {
+      border-radius: 2px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+    .site-nav {
+      background: #FFFFFF;
+      border-radius: 2px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      padding: 30px;
+      margin-top: 20px;
+    }
+    .statement {
+      background: #E5E3E4;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      padding: 20px;
+      border-radius: 5px;
+      margin-top: 20px;
+      h5 {
+        margin-top: 0;
+      }
+    }
+  }
+  .sales {
+    .tablet-holder, .mobile-holder {
+      max-width: 1200px;
+
+      .tablet {
+        width: calc(25% - 10px);
+      }
+
+      .mobile {
+        width: calc(15% - 10px);
+      }
+    }
+  }
+}

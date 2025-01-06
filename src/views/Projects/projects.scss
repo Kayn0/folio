@@ -1,0 +1,447 @@
+#online-bookings, #sales-dashboard, #clinical-notes, #about {
+
+  h1 {
+    font-family: Montserrat-Regular, sans-serif;
+    color: #1D3557;
+    span {
+      color: #F14D59;
+    }
+  }
+  h2 span {
+    color: #F14D59;
+  }
+  .margin-top-med {
+    margin-top: 100px;
+  }
+
+  .page {
+    align-items: center;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+    &.auto-height {
+      min-height: auto;
+    }
+
+    &.colour-bg {
+      background: linear-gradient(135deg, #B6FFDC, #90F1FE);
+      min-height: 90vh;
+    }
+    &.colour-bg-alt {
+      background: linear-gradient(135deg, #F1F5D9, #FFE6C0);
+      min-height: 90vh;
+    }
+    &.colour-bg, &.colour-bg-alt, &.colour-bg-alt-1 {
+      &.conclusion {
+        min-height: auto;
+      }
+    }
+
+    &.flat-bg {
+      background: #DCF0F1;
+    }
+
+    &.break-page {
+      padding: 30px 0;
+      min-height: auto;
+    }
+
+    &.break-page-med {
+      padding: 60px 0;
+      min-height: auto;
+    }
+
+
+    &.vert-space-lge {
+      padding: 120px 0;
+    }
+
+    &.vert-space-lge-med {
+      padding: 80px 0 40px;
+    }
+
+    &.vert-space-lge-alt {
+      padding: 80px 0 120px;
+    }
+    .ob-hero {
+      max-width: 700px;
+      width: 100%;
+    }
+
+    hr {
+      border: 1px solid #eee;
+      width: 100%;
+    }
+    .content {
+      display: flex;
+      flex-direction: column;
+      max-width: 630px;
+      text-align: left;
+      width: 100%;
+
+      &.spacer {
+        margin: 160px 0;
+      }
+
+      &.spacer-top {
+        margin: 80px 0 120px;
+      }
+
+      .note {
+        background: #457B9D;
+        border-radius: 2px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        color: #FFFFFF;
+        flex: 1;
+        font-size: 12px;
+        line-height: 20px;
+        max-width: 120px;
+        padding: 15px;
+      }
+
+
+
+      .stacked-images {
+        display: flex;
+        flex-direction: column;
+        img {
+          height: auto;
+          padding-right: 20px;
+          width: calc(100% - 20px);
+          margin-bottom: 20px;
+        }
+      }
+
+      .old-flow {
+        max-width: 800px;
+      }
+
+      .mobile-holder, .wireframe-holder  {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .mobile {
+          width: calc(50% - 20px);
+          box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+          border-radius: 16px;
+          margin-bottom: 40px;
+        }
+        .wireframe {
+          border-radius: 3px;
+        }
+      }
+      .tablet-holder {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .tablet {
+          width: calc(50% - 20px);
+          border-radius: 24px;
+          margin-bottom: 40px;
+        }
+      }
+
+      .image-row {
+        display: flex;
+        flex-direction: row;
+      }
+    }
+    .image-holder {
+      display: flex;
+      flex-direction: column;
+      margin-top: -26px;
+      &.clear-margin {
+        margin: 20px 0 0;
+      }
+      .wireframe {
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        width: 100%;
+        margin: 5px 0 50px;
+      }
+
+
+    }
+    .toolkit {
+      margin: 5px 0 50px;
+      max-width: 520px;
+      width: 100%;
+    }
+  }
+
+  .highlight-text {
+    margin-bottom: 40px;
+  }
+  .info-card {
+    background: #ECF2F5;
+    font-size: 14px;
+    line-height: 28px;
+    display: flex;
+    max-width: 250px;
+    height: 190px;
+    padding: 30px;
+    &.alt1 {
+      background: #FEEDEE;
+    }
+    &.alt2 {
+      background: #F7FCF5;
+    }
+    &.alt3 {
+      background: #EEF8F8;
+    }
+  }
+
+  .image-label {
+    background: #457B9D;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border-radius: 2px;
+    color: #FFFFFF;
+    padding: 30px;
+    width: calc(100% - 60px);
+    h6 {
+      color: #FFFFFF;
+    }
+    &:first-child {
+      margin-top: -86px;
+    }
+  }
+
+  .box {
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    color: #FFFFFF;
+    font-size: 14px;
+    text-align: left;
+    width: 185px;
+    padding: 40px 40px 20px;
+    margin-bottom: 20px;
+
+    h5 {
+      margin: 0;
+    }
+
+    &.bg-1 {
+      background: #A4326D;
+    }
+
+    &.bg-2 {
+      background: #8165B2;
+    }
+
+    &.bg-3 {
+      background: #5E7BC6;
+    }
+  }
+
+  .image-content {
+    display: flex;
+    flex-direction: column;
+      a.label-heading {
+        color: #FFFFFF;
+        margin-top: 50px;
+        text-decoration: none;
+        transition: all 0.2s ease;
+        &:hover {
+          box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+          text-decoration: underline;
+        }
+      }
+    img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  .flexed {
+    justify-content: space-between;
+    margin-top: 10px;
+    .boxed {
+      background: #ECF2F5;
+      border-radius: 2px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+      color: #222222;
+      flex: 1;
+      font-family: "Montserrat-Light", sans-serif;
+      font-size: 14px;
+      justify-content: space-between;
+      line-height: 24px;
+      max-width: calc(310px - 60px);
+      padding: 30px;
+
+      h6 {
+        font-size: 14px;
+        font-family: "Montserrat-Bold", sans-serif;
+        margin: 0;
+      }
+    }
+
+    .boxed:last-child {
+      background: #F1F9F9;
+      flex: 1;
+    }
+  }
+  .personas {
+    display: flex;
+    padding-top: 40px;
+    align-items: center;
+    justify-content: center;
+    img.persona {
+      width: 100%;
+      max-width: 200px;
+      padding-left: 10px;
+    }
+
+    img.persona:first-child {
+      padding: 0 10px 0 0;
+    }
+  }
+
+  .user-journey {
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    margin: 20px 0 120px;
+    width: 320px;
+    img {
+      height: 100%;
+    }
+  }
+
+  .tablet-holder {
+    margin-bottom: 40px;
+  }
+
+  .tablet-holder, .mobile-holder {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: space-between;
+    width: calc(100% - 40px);
+    max-width: 1440px;
+    .tablet {
+      width: calc(20% - 10px);
+    }
+    .mobile {
+      width: calc(12% - 10px);
+    }
+  }
+  .hi-res  {
+    border-radius: 3px;
+    margin-bottom: 60px;
+    width: 100%;
+    &.custom-margin {
+      margin-bottom: 10px
+    }
+  }
+  .label-details {
+    border-radius: 2px;
+    background: #DCF0F1;
+    padding: 30px;
+    width: calc(100% - 60px);
+    margin-bottom: 20px;
+  }
+}
+.flexed-col {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  .points {
+    align-items: center;
+    background: #FFFFFF;
+    border-radius: 2px;
+    font-size: 14px;
+    height: 54px;
+    margin-bottom: 10px;
+    padding: 0 20px;
+    display: flex;
+    max-width: max-content;
+    line-height: 20px;
+    &.alt {
+      background: #DCF0F1;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #online-bookings, #sales-dashboard, #clinical-notes {
+    .page {
+      width: calc(100% - 40px);
+      padding: 0 20px;
+      &.break-page-med {
+        padding: 20px 20px !important;
+      }
+      &.vert-space-lge {
+        padding: 60px 20px 20px !important;
+      }
+      &.vert-space-lge-med {
+        padding: 20px 20px !important;
+      }
+      &.vert-space-lge-alt {
+        padding: 20px 20px !important;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 652px) {
+  #online-bookings, #sales-dashboard, #clinical-notes {
+    .page {
+      min-height: auto;
+      .old-flow {
+        padding-bottom: 20px;
+      }
+      .personas {
+        flex-direction: column;
+        .persona {
+          padding: 20px 0;
+        }
+      }
+      .flexed {
+        flex-direction: column;
+        .note {
+          margin-bottom: 10px !important;
+        }
+      }
+      .info-card {
+        height: auto !important;
+      }
+      .note {
+        height: auto;
+      }
+    }
+  }
+  #about .flex-row .content {
+    flex-direction: column !important;
+    align-items: center;
+    padding: 0 40px;
+    .left {
+      margin-bottom: 60px;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 420px) {
+  #online-bookings, #sales-dashboard, #clinical-notes {
+    .page {
+      &.colour-bg, &.colour-bg-alt, &.colour-bg-alt-1 {
+        min-height: 60vh !important;
+      }
+
+      .flexed.top-space {
+        flex-direction: column;
+        align-items: center;
+        .note {
+          margin-bottom: 10px;
+        }
+      }
+      .points {
+        height: auto;
+        padding: 10px 20px;
+      }
+    }
+  }
+}

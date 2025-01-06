@@ -1,0 +1,42 @@
+#about {
+    padding-top: 130px;
+    background: linear-gradient(0deg, #A8DADC, #F1FAEE);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    .flex-row {
+        display: flex;
+        flex-direction: row;
+        width: 630px;
+        align-items: center;
+        justify-content: center;
+    }
+    .content {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 60px;
+        .left {
+            flex: 1;
+            .circle {
+                background: #eee;
+                width: 160px;
+                height: 160px;
+                border-radius: 1000px;
+            }
+        }
+        .right {
+            flex: 2;
+
+            text-align: left;
+        }
+    }
+
+    .space-top-about {
+        margin-top: 30px;
+    }
+    h6 {
+        line-height: 24px;
+    }
+}
