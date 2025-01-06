@@ -9,7 +9,7 @@
         <router-link to="/">
           <img
             class="logo"
-            alt="Metro Conveyencers Logo"
+            alt="Kane Maslen Logo"
             src="@/assets/images/kane-maslen-logo.png"
           />
         </router-link>

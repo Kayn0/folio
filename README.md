@@ -1,9 +1,9 @@
-# Metro Conveyancing
+# Kane Maslen's Folio
 
 ## Project setup
 In the terminal navigate to an empty folder and type 
 ```
-git clone https://github.com/Kayn0/metro.git
+git clone https://github.com/Kayn0/folio.git
 ```
 Once completed then type
 ```
